@@ -8,7 +8,7 @@
 ```bash
 $ pip install mysql-to-sqlite3
 ```
-
+![alt text](스크린샷(62).png)
 2. mysql을 sqlite로 변환
 ```bash
 $ mysql2sqlite -f classicmodels.sqlite -d classicmodels -u root -p
@@ -26,7 +26,10 @@ $ mysql2sqlite -f classicmodels.sqlite -d classicmodels -u root -p
 
 8. connect to server 창에 `SQLite` 선택, Database Path 칸에 4번에서 복사한 경로 붙여넣기 후, [Connect] 버튼 클릭
 
-9. 
+9. 좌측 패널 Database에 `classicmodels.sqlite DB` 생성 확인
+
+10. `Query`를 추가, 실행하여 테이블 생성과 데이터 불러오기 확인
+
 ---
 
 > ## 2. streamlit 대시보드 개발
