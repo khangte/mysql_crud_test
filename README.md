@@ -24,9 +24,9 @@ Streamlit을 통해 SQL 쿼리를 직접 실행하고 결과를 시각화할 수
 ## 📂 프로젝트 구조
 ```yaml
 MYSQL_CRUD_TEST/ 
-├── classicmodels.sqlite # SQLite DB 파일 (MySQL → SQLite 변환 결과) 
+├── classicmodels.sqlite    # SQLite DB 파일 (MySQL → SQLite 변환 결과) 
 ├── streamlit_sqlite_app.py # Streamlit 앱 메인 파일 
-├── requirements.txt # Streamlit 실행에 필요한 의존성 
+├── requirements.txt        # Streamlit 실행에 필요한 의존성 
 └── README.md
 ```
 
@@ -83,9 +83,8 @@ conn = sqlite3.connect(DB_PATH)
 
 ---
 
-# MySQL DB를 SQLite3 DB로 변환하는 방법
+> # MySQL DB를 SQLite3 DB로 변환하는 방법
 
->## 1. MySQL DB를 SQLite3 DB로 변환
 1. `mysql-to-sqlite3` 파이썬 라이브러리 설치
 ```bash
 $ pip install mysql-to-sqlite3
@@ -120,27 +119,5 @@ $ mysql2sqlite -f classicmodels.sqlite -d classicmodels -u root -p
 10. `Query`를 추가, 실행하여 테이블 생성과 데이터 불러오기 확인
 ![alt text](스크린샷(72).png)
 ![alt text](스크린샷(73).png)
-
----
-
-> ## 2. streamlit 대시보드 개발 및 테스트
-1. `streamlit_sqlit_app.py` 파일 생성 후, 실행
-```bash 
-$ streamlit run streamlit_sqlit_app.py
-```
-![alt text](스크린샷(80).png)
-
-2. streamlit 확인
-![alt text](스크린샷(81).png)
-
----
-
-> ## 3. GitHub push
-```bash
-$ ./git-push-all.sh
-```
-
-> ## 4. streamlit 웹사이트 배포
-![alt text](스크린샷(82).png)
 
 ---
