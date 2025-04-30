@@ -103,21 +103,23 @@ $ mysql2sqlite -f classicmodels.sqlite -d classicmodels -u root -p
 4. `classicmodels.sqlite` 경로 복사
 ![alt text](스크린샷(68).png)
 
-5. `VSCode` 좌측 패널 `Extensions`에서 **MySQL** 검색 후 **MySQL Database Client** 설치
+5. VSCode 좌측 패널 Extensions에서 **MySQL** 검색 후 **MySQL Database Client** 설치
 ![alt text](스크린샷(62)-1.png)
 
-6. 좌측 패널에 Database, Service 아이콘 생성 확인, Database 아이콘 클릭 후, `+` 버튼 클릭
+6. 좌측 패널에 Database, Service 아이콘 생성 확인, Database 아이콘 클릭 후, [+] 버튼 클릭
 ![alt text](스크린샷(63).png)
 ![alt text](스크린샷(63)-1.png)
 
-8. connect to server 창에 `SQLite` 선택, Database Path 칸에 4번에서 복사한 경로 붙여넣기 후, [Connect] 버튼 클릭
+7. connect to server 창에 `SQLite` 선택, Database Path 칸에 4번에서 복사한 경로 붙여넣기 후, [Connect] 버튼 클릭
 ![alt text](스크린샷(69).png)
 
-9. 좌측 패널 Database에 `classicmodels.sqlite DB` 생성 확인
+8. 좌측 패널 Database에 `classicmodels.sqlite DB` 생성 확인
 ![alt text](스크린샷(71).png)
 
-10. `Query`를 추가, 실행하여 테이블 생성과 데이터 불러오기 확인
+9. 쿼리 생성
 ![alt text](스크린샷(72).png)
+
+10. 쿼리 실행
 ![alt text](스크린샷(73).png)
 
 ---
